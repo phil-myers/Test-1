@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colour Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      color: #333;
+    }
+    .hero {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background: #ffebcd;
+      border-bottom: 4px solid #ff8c00;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #4b0082;
+    }
+    .hero p {
+      margin: 0.75rem auto 0;
+      max-width: 720px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #4a4a4a;
+    }
+    .colour-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      padding: 2rem 1.5rem;
+    }
+    .colour-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+      border: 1px solid #ececec;
+    }
+    .colour-swatch {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .colour-info {
+      padding: 1rem 1.25rem 1.5rem;
+    }
+    .colour-info h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .colour-info p {
+      margin: 0;
+      color: #555;
+      line-height: 1.5;
+    }
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Colour Playground</h1>
+    <p>Use this sample page for testing colours, contrast, layout, and dynamic visual styles. Each card below shows a different colour palette with a short description.</p>
+  </section>
+
+  <section class="colour-grid">
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #ff6f61;">Coral</div>
+      <div class="colour-info">
+        <h2>Coral</h2>
+        <p>A warm pink-orange tone that brings energy and friendliness to interfaces. Great for buttons and highlights.</p>
+      </div>
+    </article>
+
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #6b5b95;">Indigo</div>
+      <div class="colour-info">
+        <h2>Indigo</h2>
+        <p>A deep blue-purple shade that feels rich and sophisticated. Perfect for headers and visual anchors.</p>
+      </div>
+    </article>
+
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #88b04b;">Moss</div>
+      <div class="colour-info">
+        <h2>Moss</h2>
+        <p>An earthy green that works well for natural themes, success states, and soft accents.</p>
+      </div>
+    </article>
+
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #f7cac9; color: #333;">Blush</div>
+      <div class="colour-info">
+        <h2>Blush</h2>
+        <p>A gentle pastel pink with a calm, inviting presence. Use it for backgrounds, cards, or subtle alerts.</p>
+      </div>
+    </article>
+
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #92a8d1;">Sky</div>
+      <div class="colour-info">
+        <h2>Sky</h2>
+        <p>A cool, soft blue that evokes openness and trust. Ideal for informational panels and soothing visuals.</p>
+      </div>
+    </article>
+
+    <article class="colour-card">
+      <div class="colour-swatch" style="background: #f2b705; color: #333;">Sunshine</div>
+      <div class="colour-info">
+        <h2>Sunshine</h2>
+        <p>A bright golden yellow that adds warmth and optimism. Use it sparingly for emphasis and calls to action.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    Colour test page generated for design and layout trials. Use this file to preview how different colours behave in a responsive grid layout.
+  </footer>
+</body>
+</html>
